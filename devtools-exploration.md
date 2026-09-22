@@ -67,7 +67,7 @@ The hover effect can be inspected in DevTools by:
 
 ## Website 3 — https://nyakito.github.io
 
-The third website used for this exercise is the **Nyakito Noah portfolio website**. The page contains several sections, navigation links, projects, and a contact form.
+The third website I used for this exercise was **My portfolio website**. The page contains several sections, navigation links, projects, and a contact form.
 
 ### 1. Identify 5 different HTML elements
 
@@ -104,11 +104,3 @@ The form can be inspected in DevTools by locating the `<form>` element and expan
 The screenshot below shows the website/form inspection:
 
 ![Website 3 screenshot](Images/website%203form%20screenshot.png)
-
----
-
-## Conclusion
-
-This exercise provided practical experience using browser **Developer Tools** to inspect webpage structure, identify HTML elements, examine forms and inputs, and inspect CSS styling such as the `:hover` state.
-
-It also demonstrated how HTML elements are organized within a webpage and how the browser's **Elements** and **Styles** panels can be used to understand and troubleshoot a website.
