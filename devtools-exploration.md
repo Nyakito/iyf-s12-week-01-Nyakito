@@ -1,111 +1,114 @@
-DevTools Exploration assignment 
+# DevTools Exploration Assignment
 
-Date: 22 September 2026
+**Date:** 22 September 2026
 
-**Website 1 — https://example.com**
+---
 
-1. What HTML tags are used on the page?
+## Website 1 — https://example.com
 
-The main page uses these HTML elements:
+### 1. What HTML tags are used on the page?
 
-<html> — root element
+The main page uses the following HTML elements:
 
-<head> — document metadata
+* `<html>` — root element
+* `<head>` — contains document metadata
+* `<title>` — defines the page title
+* `<meta>` — provides metadata
+* `<body>` — contains the visible page content
+* `<h1>` — main heading
+* `<p>` — paragraph
+* `<a>` — hyperlink
 
-<title> — page title
+The visible page contains the heading **"Example Domain"**, an explanatory paragraph, and a **"Learn more"** hyperlink.
 
-<meta> — metadata
+### 2. What is the page title?
 
-<body> — visible page content
+**Example Domain**
 
-<h1> — main heading
+### 3. How many headings are there?
 
-<p> — paragraph
+There is **1 heading**, which is an `<h1>` element:
 
-<a> — hyperlink
+`<h1>Example Domain</h1>`
 
-The visible page contains the heading “Example Domain”, explanatory paragraph text, and a “Learn more” link.
+---
 
-2. What is the page title?
+## Website 2 — https://developer.mozilla.org
 
-Example Domain
+### 1. Find the navigation menu — what tag is it wrapped in?
 
-3. How many headings are there?
+The navigation menu is wrapped in the semantic `<nav>` element.
 
-There is 1 heading, an <h1> element: “Example Domain.”
+The `<nav>` element contains navigation-related links and content.
 
-**Website 2 — https://developer.mozilla.org**
+### 2. How is the search bar structured?
 
-1. Find the navigation menu — what tag is it wrapped in?
+The search functionality is structured using a search form and a search input.
 
-The navigation is wrapped in the semantic <nav> element.
+The important elements include:
 
-The navigation contains links and navigation-related content. MDN uses semantic navigation markup, and the <nav> element is specifically intended for a section containing navigation links.
+* `<form>` — used to submit the search
+* `<input type="search">` — used to enter the search query
 
-2. How is the search bar structured?
+The search bar can therefore be inspected in DevTools by expanding the relevant `<form>` element and examining its child elements.
 
-The search functionality is structured as a search form containing a search input. In HTML terms, the important structure is:
+### 3. What happens when you hover over links?
 
-a search container / search landmark
+The links have a CSS `:hover` pseudo-class that defines how their appearance changes when the mouse pointer is placed over them.
 
-<form> for submitting the search
+The hover effect can be inspected in DevTools by:
 
-<input type="search"> for entering the query
+1. Selecting a link in the **Elements** panel.
+2. Opening the **Styles** panel.
+3. Selecting or forcing the `:hover` state.
+4. Observing the CSS rules applied to the link.
 
-3. What happens when you hover over links (check the styles)?
+---
 
-The links have a dedicated CSS :hover pseudo-class state. When a link is hovered, its CSS can change its visual appearance.
+## Website 3 — https://nyakito.github.io
 
-In DevTools, this can be checked by selecting a link, opening the Styles panel, and forcing the :hover state.
+The third website used for this exercise is the **Nyakito Noah portfolio website**. The page contains several sections, navigation links, projects, and a contact form.
 
-**Website 3 — https://nyakito.github.io**
+### 1. Identify 5 different HTML elements
 
-The third website was changed from the KRA iTax site to Nyakito Noah's portfolio site. The live page is accessible and contains multiple semantic sections, a project area, and a contact form. citeturn0view0
+Five different HTML elements found on the page are:
 
-1. Identify 5 different HTML elements
+* `<header>` — contains the page/hero header area
+* `<nav>` — contains navigation links
+* `<section>` — used to organize major sections of the page
+* `<h1>` — contains the main page heading, **"Building the web, one idea at a time."**
+* `<p>` — used for paragraph text
 
-Five HTML elements visible in the page structure are:
+Other elements used on the page include:
 
-<header> — page/hero header area
+`<h2>`, `<h3>`, `<a>`, `<form>`, `<input>`, `<textarea>`, `<button>`, `<ul>`, and `<li>`.
 
-<nav> — navigation links
+The page contains sections such as **"Who I Am," "What I Work With," "Things I've Built,"** and **"Let's Connect."**
 
-<section> — major page sections such as About, Skills, Projects and Contact
+### 2. Find a form element and list its inputs
 
-<h1> — main page heading, “Building the web, one idea at a time.”
+The **Contact** section contains a form with the following fields:
 
-<p> — paragraph text used throughout the page
+| Field         | HTML element / control                                                 |
+| ------------- | ---------------------------------------------------------------------- |
+| Your Name     | `<input>` — placeholder: **Enter your name**                           |
+| Email Address | `<input>` — placeholder: **[you@example.com](mailto:you@example.com)** |
+| Subject       | `<input>` — placeholder: **What's this about?**                        |
+| Message       | `<textarea>`                                                           |
+| Submit        | `<button>` — **Send Message**                                          |
 
-Other elements visible/used include <h2>, <h3>, <a>, <form>, <input>, <textarea>, <button>, <ul> and <li>. The page contains headings for sections such as “Who I Am,” “What I Work With,” “Things I've Built,” and “Let's Connect.” citeturn0view0
+The form can be inspected in DevTools by locating the `<form>` element and expanding it to view its child input and control elements.
 
-2. ### Find a form element and list its inputs
+### 3. Screenshot of the Elements Panel
 
-The Contact section contains a form with these fields:
-
-Field
-
-Input/control
-
-Your Name
-
-<input> — placeholder: Enter your name
-
-Email Address
-
-<input> — placeholder: you@example.com
-
-Subject
-
-<input> — placeholder: What's this about?
-
-Message
-
-<textarea>
-
-Submit
-
-<button> — Send Message
-
-The screenshot from the page 
+The screenshot below shows the website/form inspection:
 
 ![Website 3 screenshot](Images/website%203form%20screenshot.png)
+
+---
+
+## Conclusion
+
+This exercise provided practical experience using browser **Developer Tools** to inspect webpage structure, identify HTML elements, examine forms and inputs, and inspect CSS styling such as the `:hover` state.
+
+It also demonstrated how HTML elements are organized within a webpage and how the browser's **Elements** and **Styles** panels can be used to understand and troubleshoot a website.
