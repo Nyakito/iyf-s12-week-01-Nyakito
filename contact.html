@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Form</h1>
+    </header>
+
+    <main>
+        <section>
+          <fieldset>
+           <legend><h2>Get in Touch With Me</h2></legend>
+
+            <form action="#" method="post">
+                <label for="name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                 <label for="name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required> 
+
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject </option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Website Support</option>
+                    <option value="feedback">Website Feedback</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required minlength="50" maxlength="500"></textarea>
+
+                <label for="checkbox">
+                    <input type="checkbox" id="checkbox" name="checkbox" required>
+                    Receive updates and newsletters
+                </label>
+
+                <button type="submit">Submit</button>
+            </form>
+          </fieldset>
+        </section>
+
+    </main>
