@@ -18,13 +18,22 @@ we learned so much about tags, elements and all other useful concepts as we prog
 
 
 ## How to Run
-1. Clone this repository
-2. Open `index.html` in your browser
-   OR
-   Run `npm install` then `npm start`
+1. Clone the repository:
+
+git clone https://github.com/Nyakito/iyf-s12-week-01-Nyakito.git
+
+Navigate into the project directory:
+
+cd iyf-s12-week-01-Nyakito
+
+Open index.html in a web browser.
+
+You can either double-click index.html or run:
+
+xdg-open index.html
 
 ## Lessons Learned
-What did you learn while building this project?
+Semantic HTML elements make websites more accesible by web browsers
 
 ## Challenges Faced
 There was a merge conflict when **I** edited the live demo description twice, but I resolved it
