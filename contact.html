@@ -6,50 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
 </head>
+
 <body>
+
     <header>
-        <h1>Contact Form</h1>
+        <nav> 
+            <h1>Contact Form</h1> 
+            <ul> 
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li> 
+                <li><a href="contact.html" aria-current="page">Contact</a></li> </ul>
+        </nav>
     </header>
 
     <main>
         <section>
+            <h2>Get in Touch</h2>
 
             <form action="#" method="post">
+
                 <fieldset>
-           <legend>Get in Touch With Me</legend>
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" name="first-name" required>
+                    <legend>Contact Information</legend>
 
-                 <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" name="last-name" required>
+                    <p>
+                        <label for="first-name">First Name:</label>
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="first-name"
+                            autocomplete="given-name"
+                            required
+                        >
+                    </p>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                    <p>
+                        <label for="last-name">Last Name:</label>
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="last-name"
+                            autocomplete="family-name"
+                            required
+                        >
+                    </p>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required> 
+                    <p>
+                        <label for="email">Email:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                        >
+                    </p>
 
-                <label for="subject">Subject:</label>
-                <select id="subject" name="subject" required>
-                    <option value="">Select a subject </option>
-                    <option value="general">General Inquiry</option>
-                    <option value="support">Website Support</option>
-                    <option value="feedback">Website Feedback</option>
-                </select>
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            autocomplete="tel"
+                            placeholder="+254 7XX XXX XXX"
+                            required
+                        >
+                    </p>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required minlength="50" maxlength="500"></textarea>
+                </fieldset>
 
-                <label for="checkbox">
-                    <input type="checkbox" id="checkbox" name="checkbox" required>
-                    Receive updates and newsletters
-                </label>
+                <fieldset>
+                    <legend>Message</legend>
+
+                    <p>
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Website Support</option>
+                            <option value="feedback">Website Feedback</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="message">Message:</label>
+                        <br>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="8"
+                            cols="50"
+                            minlength="50"
+                            maxlength="500"
+                            required
+                        ></textarea>
+                    </p>
+
+                    <p>
+                        <label for="updates">
+                            <input
+                                type="checkbox"
+                                id="updates"
+                                name="updates"
+                                value="yes"
+                                required
+                            >
+                            Receive updates and newsletters
+                        </label>
+                    </p>
+
+                </fieldset>
 
                 <button type="submit">Submit</button>
-            </form>
-          </fieldset>
-        </section>
 
+            </form>
+        </section>
     </main>
-    </body>
+    </section> 
+    <section> 
+        <h2>Connect With Me</h2> 
+        <ul> 
+            <li> <a href="https://github.com/Nyakito" target="_blank"> GitHub </a> </li> 
+            <li> <a href="https://www.linkedin.com/noa-nyakito" target="_blank"> LinkedIn </a> </li> 
+        </ul> 
+    </section> 
+    <section> 
+        <h2>Location</h2> 
+            <p>Nairobi, Kenya</p> 
+            <p>Timezone: East Africa Time (EAT), UTC+3</p>
+    </section>
+</body>
 </html>
