@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(229, 244, 227);
+    color: rgb(59, 96, 100);
+    margin: 32px 64px;
+}
+
+/* Header */
+
+header {
+    padding-bottom: 24px;
+    border-bottom: 2px solid rgb(59, 96, 100);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+/* Navigation */
+
+.Nav li {
+    display: inline;
+    list-style: none;
+    margin-right: 8px;
+}
+
+.Nav li a {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 2px solid rgb(59, 96, 100);
+    border-radius: 8px;
+    background-color: rgb(242, 143, 59);
+    color: rgb(59, 96, 100);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+span{
+    font-weight: bolder;
+}
+
+.Nav li a:hover {
+    background-color: rgb(59, 96, 100);
+    color: rgb(242, 143, 59);
+}
+
+.Nav li a:active {
+    transform: translateY(2px);
+}
+
+/* Main content */
+
+main {
+    max-width: 800px;
+    margin: 48px auto;
+}
+
+section {
+    margin-bottom: 48px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+section img {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    margin-top: 24px;
+    border-radius: 12px;
+}
+
+/* Hobbies */
+
+section ul {
+    padding-left: 24px;
+}
+
+section li {
+    margin-bottom: 8px;
+}
+
+section button{
+    font-size: 1.5rem;
+    border: 2px rgb(242, 143, 59) solid;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgb(59, 96, 100);
+    color: rgb(242, 143, 59);
+}
+
+textarea{
+    border: 1px rgb(59, 96, 100) dashed;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 8px 8px;
+}
+select{
+    border: 1.5px rgb(59, 96, 100) solid;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    color: rgb(242, 143, 59);
+    background-color: rgb(59, 96, 100);
+
+}
+
+a {
+    color: rgb(59, 96, 100);
+}
+
+a:hover {
+    color: rgb(242, 143, 59);
+}
+
+fieldset{
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    padding: 16px;
+    border-radius: 8px;
+}
+.dude{
+    border-top: 2px rgb(59, 96, 100) solid;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 2px solid rgb(59, 96, 100);
+}
+
+footer h4 {
+    margin-bottom: 8px;
+}
+
+footer a {
+    display: inline-block;
+    margin-bottom: 20px;
+}
